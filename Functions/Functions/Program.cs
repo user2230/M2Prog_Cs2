@@ -14,7 +14,20 @@ namespace Functions
         {
 
             Console.WriteLine("Dit is nu de start van mijn programma");
+            Vraag1();
         }
-      
+        internal void Vraag1()
+
+        {
+            Console.WriteLine("how long did you think i would survive");
+            string antwoord = Console.ReadLine();
+
+            Console.WriteLine(antwoord);
+        }
+           
+        
     }
+
 }
+
+   
