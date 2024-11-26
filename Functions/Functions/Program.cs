@@ -4,6 +4,11 @@ namespace Functions
 {
     internal class Program
     {
+        string[] vragen =
+        {
+                "Which spooky 2001 GameCube game starring Mario’s brother got a reboot for Nintendo Switch in 2019?",
+                "In May 2022, the government of what European nation banned its employees from using American gaming terms such as \"e-sports,\" instead using their domestic language counterparts like \"jeu video de competition?"
+            };
         static void Main(string[] args)
         {
             Program program = new Program();
@@ -14,20 +19,31 @@ namespace Functions
         {
 
             Console.WriteLine("Dit is nu de start van mijn programma");
-            Vraag1();
+            
+            string antwoord1 = Vraag1();
+            Console.WriteLine(antwoord1);
+            string vraag0 = Getvraag(0);
+
         }
-        internal void Vraag1()
+        internal string Vraag1()
 
         {
             Console.WriteLine("how long did you think i would survive");
             string antwoord = Console.ReadLine();
 
-            Console.WriteLine(antwoord);
+            return antwoord;
         }
-           
-        
+        internal string Getvraag(int vraagIndex)
+        {
+            return vragen[vraagIndex];
+        }
     }
 
+
+
+
 }
+
+
 
    
