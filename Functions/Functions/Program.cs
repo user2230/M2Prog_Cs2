@@ -19,10 +19,10 @@ namespace Functions
         {
 
             Console.WriteLine("Dit is nu de start van mijn programma");
-            
-            string antwoord1 = Vraag1();
+            string antwoord1 = GetRandomVraag();
+            string antwoord2 = Vraag1();
             Console.WriteLine(antwoord1);
-            string vraag0 = Getvraag(0);
+            string vraag0 = GetVraag(0);
 
         }
         internal string Vraag1()
@@ -33,13 +33,23 @@ namespace Functions
 
             return antwoord;
         }
-        internal string Getvraag(int vraagIndex)
+        internal string GetVraag(int vraagIndex)
         {
             return vragen[vraagIndex];
         }
+        internal string GetRandomVraag()
+        {
+
+            Random rand = new Random();
+            int dobbel = rand.Next(0, vragen.Length);
+             
+            return GetVraag(dobbel);
+        }
+
+
+
+
     }
-
-
 
 
 }
