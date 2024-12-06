@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace RijSchool
 {
-    internal class auto
+    internal class Auto
     {
         internal bool automaat;
         internal string merk;
         internal string kenteken;
-        internal int kilometerStand;
+        internal int KilometerStand;
     }
+    
+
 }

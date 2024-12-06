@@ -11,6 +11,6 @@ namespace RijSchool
         internal int tijd;
         internal Student student;
         internal RijLeraar RijLeraar;
-        internal auto auto;
+        internal Auto auto;
     }
 }

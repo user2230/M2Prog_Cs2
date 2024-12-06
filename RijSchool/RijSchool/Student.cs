@@ -12,7 +12,7 @@ namespace RijSchool
         internal int leeftijd;
         internal LesPakket LesPakket;
         internal RijLeraar leraar;
-        internal TheorieTest theorieTest;
+        internal TheorieTest TheorieTest;
         internal RijTest RijTest;
     }
 }
