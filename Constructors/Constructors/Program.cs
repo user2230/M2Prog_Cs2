@@ -9,7 +9,9 @@
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
         }
+
+        Quiz quiz = new Quiz(10);
+        
     }
 }

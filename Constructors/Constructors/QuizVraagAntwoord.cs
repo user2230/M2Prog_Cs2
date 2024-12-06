@@ -10,5 +10,12 @@ namespace Constructors
     {
         internal QuizVraag vraag;
         internal bool goed;
+
     }
+    internal QuizVraagAntwoord( QuizVraag vraag)
+    {
+        vraag = vraag;
+        goed = false;
+    }
+    
 }

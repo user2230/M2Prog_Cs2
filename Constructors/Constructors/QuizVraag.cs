@@ -18,11 +18,7 @@ namespace Constructors
             this.vraag = vraag;
             this.antwoord = antwoord;
         }
+     
 
-        class Quiz
-        {
-            internal QuizVraag[] vragen;
-            internal QuizVraagAntwoord[] ingevuldeAntwoorden;
-        }
     }
 }
