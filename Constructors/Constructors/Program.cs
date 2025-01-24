@@ -20,9 +20,10 @@
             quiz.VoegVraagToeOpIndex(0, "vraag", "antwoord");
             quiz.VoegVraagToeOpIndex(0, "vraag", "antwoord");
 
-            for (int i = 0; i < quiz.vragen.Length; i++) 
+            for (int i = 0; i < quiz.vragen.Length; i++)
             {
                 quiz.StelVraag(i);
+            }
         }
         static void Main(string[] args)
         {
